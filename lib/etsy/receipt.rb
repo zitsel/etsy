@@ -10,7 +10,7 @@ module Etsy
     attribute :currency, :from => :currency_code
     
 
-    def self.get(id, options = {})
+    def self.find(id, options = {})
       options.merge!(:require_secure => true)
       get("/receipts/#{id}", options)
     end
