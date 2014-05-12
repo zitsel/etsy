@@ -1,3 +1,7 @@
+# Fork
+
+This project was forked in order to add additional methods.
+
 # Etsy
 
 [![Build Status](https://secure.travis-ci.org/kytrinyx/etsy.png)](http://travis-ci.org/kytrinyx/etsy)
