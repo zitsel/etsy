@@ -25,7 +25,7 @@ module Etsy
     private
 
     def self.valid?(status)
-       VALID_STATuS.include?(status)
+       VALID_STATUS.include?(status)
     end
 
     def self.invalid_status_message(status)
