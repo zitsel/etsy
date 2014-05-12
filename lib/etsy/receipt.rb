@@ -20,7 +20,7 @@ module Etsy
 
       options.merge!(:require_secure => true) 
 
-      get("/shops/#{shop_id}receipts/#{status}", options)
+      get("/shops/#{shop_id}/receipts/#{status}", options)
     end
     private
 
