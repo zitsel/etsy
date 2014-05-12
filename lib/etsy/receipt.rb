@@ -22,14 +22,14 @@ module Etsy
 
       get("/shops/#{shop_id}receipts/#{status}", options)
     end
-  end
-  private
+    private
 
-  def self.valid?(status)
-     VALID_STATuS.include?(status)
-  end
+    def self.valid?(status)
+       VALID_STATuS.include?(status)
+    end
 
-  def self.invalid_status_message(status)
-   "The status '#{status}' is invalid. Must be one of #{VALID_STATuS.join(', ')}"
+    def self.invalid_status_message(status)
+     "The status '#{status}' is invalid. Must be one of #{VALID_STATuS.join(', ')}"
+    end
   end
 end
