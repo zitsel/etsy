@@ -8,7 +8,7 @@ module Etsy
     attribute :created, :from => :creation_tsz
     attribute :modified, :from => :last_modified_tsz
     attribute :currency, :from => :currency_code
-    
+    association :listings, :from => "Listings"
 
     def self.find(id, options = {})
       options.merge!(:require_secure => true)
@@ -29,7 +29,7 @@ module Etsy
     end
 
     def self.invalid_status_message(status)
-     "The status '#{status}' is invalid. Must be one of #{VALID_STATuS.join(', ')}"
+     "The status '#{status}' is invalid. Must be one of #{VALID_STATUS.join(', ')}"
     end
   end
 end
